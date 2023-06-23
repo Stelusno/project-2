@@ -1,0 +1,16 @@
+<%- include('../partials/header') %>
+<h1>Soaps</h1>
+<h2>Wanna Have Some Fun?</h2>
+<a href="/soaps/new"><h3>Create Your Own Custom Soap Here</h3></a>
+<ul>
+   <% soaps.forEach(function(s) { %>
+      <tr>
+        <td><a href="/soaps/<%= s.name %>"><%= s.name %></a></td>
+        <td><%= s.category %></td>
+        <td><%= s.scent %></td>
+        <td><%= s.price %></td>
+      </tr>
+   <% }); %>
+</ul> 
+
+<%- include('../partials/footer') %>
