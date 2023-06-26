@@ -6,7 +6,8 @@ module.exports = {
     new: newPage,
     create, 
     delete: deleteOne,
-    edit: editPage
+    edit: editPage,
+    update
 }
 
 async function indexPage(req,res) {
@@ -40,20 +41,20 @@ function newPage(req, res) {
 async function create(req, res) {
     try { 
         await Soap.create(req.body)
-        res.redirect('soaps')
+        res.redirect('/soaps')
     } catch (err) {
        console.log(err);
-       res.render('soaps/show', { errorMsg: err.message }); 
+       res.render('soaps/new', { errorMsg: err.message }); 
     }
 }
 
 async function deleteOne(req, res) {
     try{
-        const soaps = await Soap.findOneAndDelete({name: req.params.name})
-        res.redirect('soaps')
+        const soaps = await Soap.findOneAndRemove({name: req.params.name})
+        res.redirect('/soaps')
     } catch (err) {
         console.log(err);
-       res.render('soaps', { errorMsg: err.message }); 
+       res.render('/soaps', { errorMsg: err.message }); 
     }
 }
 
@@ -66,5 +67,16 @@ async function editPage(req, res) {
     } catch (err) {
         console.log(err);
         res.render('soaps/edit', { errorMsg: err.message });
+    }
+}
+
+async function update(req, res) {
+    try{
+        await Soap.findOneAndUpdate({name: req.params.name}, req.body)
+        res.redirect('/soaps')
+
+    } catch (err) {
+        console.log(err);
+        res.render('/soaps', { errorMsg: err.message });
     }
 }
