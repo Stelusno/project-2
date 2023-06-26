@@ -1,0 +1,34 @@
+<%- include('../partials/header') %>
+<h1>Edit Soap</h1>
+<form action="/soaps/<%=soap.name%>/edit>?_method=PUT" method="POST">
+    <label>Name
+        <select name="name">
+            <option value="Oatmilk & Honey">Oatmilk & Honey</option>
+            <option value="Chivarly & Lust">Chivarly & Lust</option>
+            <option value="Strictly Feminine">Strictly Feminine</option>
+            <option value="Go For Glow">Go For Glow</option>
+            <option value="Floral EverGlo">Floral EverGlo</option>
+        </select>
+    </label><br>
+    <label>Category
+        <select name="category">
+            <option value="Face Bar">Face Bar</option>
+            <option value="Yoni Bar">Yoni Bar</option>
+            <option value="Full Body">Full Body Bar</option>
+        </select>
+    </label><br>
+    <label>Scent
+        <select name="scent">
+            <option value="Masculine">Masculine</option>
+            <option value="Feminine">Feminine</option>
+            <option value="Unisex">Unisex</option>
+        </select>
+    </label><br>
+    <label>Price
+        <input type="text" name="price">
+    </label><br>
+    <input type="submit">
+    </form>
+    
+
+<%- include('../partials/footer') %>

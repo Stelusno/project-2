@@ -1,11 +1,10 @@
 <%- include('../partials/header') %>
-<h1>Individual Soap</h1>
+<h1><%= soap.name %></h1>
 
-<h2>Name: <%= soap.name %></h2>
 <h2>Category: <%= soap.category %></h2>
 <h2>Scent: <%= soap.scent %></h2>
 <h2>Price: <%= soap.price %></h2>
 
-
+<a href="/soaps/<%= soap.name %>/edit">Edit Soaps</a>
 
 <%- include('../partials/footer') %>
