@@ -108,3 +108,24 @@ justify-content: left;
 #container2 h1 {
   text-decoration: underline;
 }
+
+.index-soap-photos img {
+    height: 30vmin;
+    width: 30vmin;
+}
+
+#container3 {
+  display: flex;
+  /* display: grid; */
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 26vmin 26vmin; */
+}
+
+.soap-index2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

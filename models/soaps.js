@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const soapSchema = new Schema ({
     name: { type: String,
-        enum: ['Chivarly & Lust', 'OatMilk & Honey', 'Strictly Feminine', 'Go For Glow', 'Floral EverGlo' ],
+        enum: ['Chivarly & Lust', 'OatMilk & Honey', 'Strictly Feminine', 'Go For Glo', 'Floral EverGlo' ],
         required: true
     },
     category: {type: String,

@@ -4,15 +4,20 @@
 <a href="/soaps/new"><h3>Create Your Own Custom Soap Here</h3></a>
 <ul>
    <% soaps.forEach(function(s) { %>
+   <container id="container3">
       <tr>
-        <td><a href="/soaps/<%= s.name %>"><%= s.name %></a></td>
-        <td><%= s.category %></td>
-        <td><%= s.scent %></td>
-        <td><%= s.price %></td>
-        <form action="/soaps/<%= s.name %>?_method=DELETE" method="POST">
-         <input type="submit" value="Remove">
-        </form>
+       <div class="soap-index2">
+         <td><a href="/soaps/<%= s.name %>"><%= s.name %></a></td>
+         <div class="index-soap-photos"><td><img src="/images/soaps/<%= s.name %>.jpeg"</td></div>
+         <td><%= s.category %></td>
+         <td><%= s.scent %></td>
+         <td><%= s.price %></td>
+            <form action="/soaps/<%= s.name %>?_method=DELETE" method="POST">
+            <input type="submit" value="Remove">
+            </form>
+       </div>
       </tr>
+   </container>
    <% }); %>
 </ul> 
 
