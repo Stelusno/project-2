@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const soapsCtrl = require('../controllers/soaps'); 
+const soapsCtrl = require('../controllers/soap'); 
 
 
 router.get('/', soapsCtrl.index);
@@ -12,5 +12,6 @@ router.get('/:name/edit', soapsCtrl.edit);
 router.post('/', soapsCtrl.create); 
 router.delete('/:name', soapsCtrl.delete);
 router.put('/:name', soapsCtrl.update); 
+
 
 module.exports = router;

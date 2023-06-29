@@ -1,14 +1,13 @@
 <%- include('../partials/header') %>
-<h1>Soaps</h1>
-<h2>Wanna Have Some Fun?</h2>
-<a href="/soaps/new"><h3>Create Your Own Custom Soap Here</h3></a>
+<h1>Cart</h1>
 <ul>
    <% soaps.forEach(function(s) { %>
    <container id="container3">
       <tr>
        <div class="soap-index2">
          <td><a href="/soaps/<%= s.name %>"><%= s.name %></a></td>
-         <div class="index-soap-photos"><td><img src="/images/soaps/<%= s.name %>.jpeg"</td></div>
+       <div class="index-soap-photos">
+         <td><img src="/images/soaps/<%= s.name %>.jpeg"</td></div>
          <td><%= s.category %></td>
          <td><%= s.scent %></td>
          <td><%= s.price %></td>
@@ -22,3 +21,4 @@
 </ul> 
 
 <%- include('../partials/footer') %>
+

@@ -17,8 +17,8 @@ const soapSchema = new Schema ({
         required: true
     },
     price: {type: Number, 
-        min:7,
-        max:20,
+        min:8.99,
+        max:9.99,
         required: true
     }
     }, {

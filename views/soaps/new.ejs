@@ -1,10 +1,10 @@
 <%- include('../partials/header') %>
-
-<h1>Create New Soap</h1>
+<button><a href="/">Back</a></button>
+<h1>Add To Cart</h1>
 <form action="/soaps" method="POST">
 <label>Name
     <select name="name">
-        <option value="Oatmilk & Honey">Oatmilk & Honey</option>
+        <option value="OatMilk & Honey">OatMilk & Honey</option>
         <option value="Chivarly & Lust">Chivarly & Lust</option>
         <option value="Strictly Feminine">Strictly Feminine</option>
         <option value="Go For Glo">Go For Glo</option>
@@ -26,7 +26,10 @@
     </select>
 </label><br>
 <label>Price
-    <input type="text" name="price">
+    <select name="price">
+        <option value="8.99">8.99</option>
+        <option value="9.99">9.99</option>
+    </select>
 </label><br>
 <input type="submit">
 </form>

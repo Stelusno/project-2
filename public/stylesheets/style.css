@@ -129,3 +129,30 @@ justify-content: left;
   align-items: center;
   flex-direction: column;
 }
+
+#container4 {
+  text-align: center;
+}
+
+.show-page-imgs img {
+  height: 30vmin;
+  width: 30vmin;
+}
+
+
+.edit-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-button {
+background-color: rgb(231, 215,196);
+border-radius: 50px;
+}
+
+
+
+#container4 h1{
+  margin-top: 100px;
+}
+

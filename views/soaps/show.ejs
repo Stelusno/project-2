@@ -1,10 +1,10 @@
 <%- include('../partials/header') %>
-<h1><%= soap.name %></h1>
-
-<h2>Category: <%= soap.category %></h2>
-<h2>Scent: <%= soap.scent %></h2>
-<h2>Price: <%= soap.price %></h2>
-
-<a href="/soaps/<%= soap.name %>/edit">Edit Soaps</a>
-
+<container id="container4">
+    <h1><%= soap.name %></h1>
+    <h2>Category: <%= soap.category %></h2>
+    <h2>Scent: <%= soap.scent %></h2>
+    <h2>Price: <%= soap.price %></h2>
+    <div class="show-page-imgs"><img src="/images/soaps/<%=soap.name%>.jpeg"></div>
+    <button class="edit-button"><a href="/soaps/<%= soap.name %>/edit">Edit Soaps</a></button>
+</container>
 <%- include('../partials/footer') %>

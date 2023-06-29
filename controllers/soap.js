@@ -7,7 +7,7 @@ module.exports = {
     create, 
     delete: deleteOne,
     edit: editPage,
-    update
+    update   
 }
 
 async function indexPage(req,res) {
@@ -21,6 +21,7 @@ async function indexPage(req,res) {
         res.render('soaps/index', { errorMsg: err.message }); 
     }   
 }
+
 
 async function showPage(req, res) {
    try { 
