@@ -8,6 +8,8 @@ require('dotenv').config();
 require('./config/database');
 
 var indexRouter = require('./routes/index');
+var productsRouter = require('./routes/products');
+var contactsRouter = require('./routes/contacts');
 var soapsRouter = require('./routes/soaps');
 
 var app = express();
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method')); 
 
 app.use('/', indexRouter);
+app.use('/products', productsRouter);
+app.use('/contacts', contactsRouter);
 app.use('/soaps', soapsRouter);
 
 // catch 404 and forward to error handler
