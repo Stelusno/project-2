@@ -20,7 +20,7 @@ const soapSchema = new Schema ({
         min:8.99,
         max:9.99,
         required: true
-    }
+    },
     }, {
         timestamps: true
     });

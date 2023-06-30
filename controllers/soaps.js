@@ -1,4 +1,4 @@
-const Soap = require('../models/soaps'); 
+const Soap = require('../models/soap'); 
 
 module.exports = {
     index: indexPage,

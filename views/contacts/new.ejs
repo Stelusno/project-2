@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+<h1>Contact</h1>
+<form action="/contacts" method="POST">
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="text" name="email" placeholder="Email"><br>
+    <input type="text" name="phoneNumber" placeholder="Phone Number"><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+    <input type="submit" value="Send">
+</form>
+<%- include('../partials/footer') %>
+
