@@ -19,5 +19,5 @@ https://throbbing-butterfly-5826.fly.dev/
 ### As a site visitor I want to be able to easily navigate around the site, find products I have an interest in, and add them to my cart to checkout. 
 
 ## Next Steps:
-### Next steps would be to add functions to total the amount of items with the same name in the cart and render on page, total the cost of items and render on the page, add a sign up/login option, and add Bootstraps. 
+### Next steps would be to add functions to total the amount of items with the same name in the cart and render on page, total the cost of items and render on the page, add a sign up/login option, and add Bootstraps. Add responsivness. 
 
