@@ -14,6 +14,9 @@ https://github.com/Stelusno/project-2.git
 ## What Did I Build And How It Works? 
 ### I built a Fullstack Web App with all 7 RESTful routes and full CRUD.
 
+## User Story
+### As a site visitor I want to be able to easily navigate around the site, find products I have an interest in, and add them to my cart to checkout. 
+
 ## Next Steps:
 ### Next steps would be to add functions to total the amount of items with the same name in the cart and render on page, total the cost of items and render on the page, add a sign up/login option, and add Bootstraps. 
 
