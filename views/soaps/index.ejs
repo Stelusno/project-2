@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
-<h1>Cart</h1>
+<button><a href="/">Back</a></button>
+<h1 class="header-text">Cart</h1>
 <ul>
    <% soaps.forEach(function(s) { %>
    <container id="container3">
@@ -7,7 +8,7 @@
        <div class="soap-index2">
          <td><a href="/soaps/<%= s.name %>"><%= s.name %></a></td>
        <div class="index-soap-photos">
-         <td><img src="/images/soaps/<%= s.name %>.jpeg"</td></div>
+         <td><img class="soaps" src="/images/soaps/<%= s.name %>.jpeg"</td></div>
          <td><%= s.category %></td>
          <td><%= s.scent %></td>
          <td><%= s.price %></td>
