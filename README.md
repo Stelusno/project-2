@@ -1,4 +1,4 @@
-# project-2 
+# Beyond The Glo'
 
 ## Fullstack Web Application " Beyond The Glo' "
 https://github.com/Stelusno/project-2.git
